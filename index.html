@@ -1,59 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Code Camp project 3 Lighuen Restanio</title>
-    <link rel="stylesheet" href="index.html">
+    <title>Fuera de obra</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shorcut icon" type="image/x.icon" href="img/favincon.ico">
 </head>
+
 <body>
-    <header id="header">
-        <img src="" alt="" id="header-img">
-        <nav id="nav-bar">
-            <ul>
-                <li a href="" class="nav-link">hola</a></li>
-                <li a href="" class="nav-link">ciao</a></li>
-                <li a href="" class="nav-link">hello</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-</body>
+    <div class="header">
+        <header id="header">
+            <img src="" alt="" id="header-img">
+            <!-- Imagen de loco  -->
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="" class="nav-link">Quienes somos</a></li>
+                    <li><a href="video" class="nav-link">Nuestro Servicio</a></li>
+                    <li><a href="" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <h1>Fuera de obra</h1>
+    <p>Experiencias gastronomicas</p>
+
+    <div class="slider">
+        <ul class="slider1">
+            <li><img src="img/slider1.jpg" alt=""></li>
+            <li><img src="img/slider2.jpg" alt=""></li>
+            <li><img src="img/slider3.jpg" alt=""></li>
+
+        </ul>
+    </div>
+
     <video src="" id="video"></video>
+    <!-- Video explicativo -->
 
     <form id="form">
-        <input type="email" id="email" placeholder="Enter your email">
+        <label for="email">Ingrese su email y lo contactaremos</label>
+        <input type="email" id="email" placeholder="Ingrese su email">
 
         <input type="submit" id="submit">
     </form>
+
+    <!-- Codigo jquery -->
+    <script>
+        $(document).ready(function () {
+            $('.slider1').bxSlider()
+            mode: 'fade'
+        });
+
+        $(document).ready(function () {
+            $('.slider2').bxSlider()
+            mode: 'fade'
+        });
+
+        $(document).ready(function () {
+            $('.slider3').bxSlider()
+            mode: 'fade'
+        });
+    </script>
+
+</body>
+
+
+
 </html>
 
 
 
-<!-- User Story #1: My product landing page should have a header element with a corresponding id="header".
+<!-- 
 
-User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
 
-User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
+User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.*
 
-User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
 
-User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
 
-User Story #6: I can watch an embedded product video with id="video".
-
-User Story #7: My landing page has a form element with a corresponding id="form".
-
-User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
-
-User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
-
-User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
-
-User Story #11: Within the form, there is a submit input with a corresponding id="submit".
-
-User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).**
 
 User Story #13: The navbar should always be at the top of the viewport.
 
