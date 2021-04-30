@@ -4,7 +4,26 @@
     border: 0;
     color:#ecf0f1;
     }
-     body {
+     
+    h1 {
+        font-size: 400%;
+
+    }
+
+    h2 {
+        font-size: 200%;
+        margin:10px;
+    }
+    
+    
+    .titulo {
+        text-align: center;
+        display:block;
+        justify-content: center;
+        }
+    
+    
+    body {
         background: black;
         opacity: 0.8;
         display:flex;
@@ -17,6 +36,8 @@
         padding: 3%;
         text-align: justify;
     }
+    
+    
     
     h3 {
         font-style: 150%;
@@ -68,4 +89,10 @@ nav {
     float: left;
     padding: 10px;
     text-align: center;
+}
+footer {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    
 }
