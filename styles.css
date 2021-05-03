@@ -3,8 +3,16 @@
     padding: 0;
     border: 0;
     color:#ecf0f1;
+    font-family: 'Roboto', sans-serif;
     }
      
+     
+    body {
+        background: black;
+        opacity: 0.8;
+        display:flex;
+
+}
     h1 {
         font-size: 400%;
 
@@ -21,12 +29,12 @@
         display:block;
         justify-content: center;
         }
-    
-    
-    body {
-        background: black;
-        opacity: 0.8;
-        display:flex;
+     
+        body {
+            background: black;
+            opacity: 0.8;
+            display:flex;
+   
     }
     p { 
         color:#ecf0f1;
@@ -91,8 +99,20 @@ nav {
     text-align: center;
 }
 footer {
-    display: inline-block;
+    display: block;
     justify-content: center;
     text-align: center;
+    margin: 10px auto;
+    padding: 10px;
     
 }
+
+.slider {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
+    margin: 10 auto;
+}
+
