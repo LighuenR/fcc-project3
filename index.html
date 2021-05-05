@@ -7,132 +7,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuera de obra</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="shorcut icon" type="image/x.icon" href="img/favincon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <div class="header">
             <header id="header">
-                <img src="" alt="" id="header-img">
-                <!-- Imagen de loco  -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Service_mark.svg/1280px-Service_mark.svg.png" alt="" id="header-img">
                 <nav id="nav-bar">
                     <ul>
-                        <li><a href="whoweare" class="nav-link">Quienes somos</a></li>
-                        <li><a href="service" class="nav-link">Nuestro Servicio</a></li>
-                        <li><a href="contact" class="nav-link">Contacto</a></li>
+                        <li><a href="#whoweare" class="nav-link">Quienes somos</a></li>
+                        <li><a href="#service" class="nav-link">Nuestro Servicio</a></li>
+                        <li><a href="#contact" class="nav-link">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
 
-            <div class="titulo">
-                <h1>Fuera de obra</h1>
-                <h4>Experiencias gastronomicas</h4>
-            </div>
-
-
-            <div class="slider">
-             
-                <ul class="slider1">
-                    <li><img src="img/slider1.jpg" alt=""></li>
-                    <li><img src="img/slider2.jpg" alt=""></li>
-                    <li><img src="img/slider3.jpg" alt=""></li>
-                 </ul>
-            
-            </div>
-
-
-            <video src="" id="video"></video>
-            <!-- Video explicativo -->
-
-            <section class="one-third" id="whoweare">
-
-                <h3>Quieres somos</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus alias magni sapiente expedita
-                    veniam
-                    quia sequi exercitationem, nostrum quod minima consectetur voluptas quisquam. Distinctio ut impedit
-                    inventore reprehenderit vitae sapiente accusamus possimus illum enim voluptatibus iusto delectus,
-                    commodi ipsum temporibus!</p>
-            </section>
-            <section class="one-third" id="service">
-
-                <h3>Nuestro servicio</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus alias magni sapiente expedita
-                    veniam
-                    quia sequi exercitationem, nostrum quod minima consectetur voluptas quisquam. Distinctio ut impedit
-                    inventore reprehenderit vitae sapiente accusamus possimus illum enim voluptatibus iusto delectus,
-                    commodi ipsum temporibus!</p>
-            </section>
-            <section class="one-third" id="contact">
-
-                <h3>Contacto</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus alias magni sapiente expedita
-                    veniam
-                    quia sequi exercitationem, nostrum quod minima consectetur voluptas quisquam. Distinctio ut impedit
-                    inventore reprehenderit vitae sapiente accusamus possimus illum enim voluptatibus iusto delectus,
-                    commodi ipsum temporibus!</p>
-            </section>
-            <footer>
-                <div class="contacto">
-                    <ul>
-                        <li>
-                            <a href="instagram.com/lighuenr" target="_blank">Instagram</a>
-
-                        </li>
-                    </ul>
-
-                    <form id="form">
-                        <label for="email">Ingrese su email y lo contactaremos</label>
-                        <input type="email" id="email" placeholder="Ingrese su email">
-
-                        <input type="submit" id="submit">
-                    </form>
-                </div>
-            </footer>
-
+        <div class="titulo">
+            <h1>Fuera de obra</h1>
+            <h4>Experiencias gastronomicas</h4>
         </div>
 
-        <!-- Codigo jquery -->
-        <script>
-            $(document).ready(function () {
-                $('.slider1').bxSlider()
-                mode: 'fade'
-            });
+        <div class="video-container"><iframe src="https://www.youtube.com/embed/VZ5nkPLkl3o"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="video-iframe"></iframe></div>
 
-            $(document).ready(function () {
-                $('.slider2').bxSlider()
-                mode: 'fade'
-            });
+        <!-- Video explicativo -->
 
-            $(document).ready(function () {
-                $('.slider3').bxSlider()
-                mode: 'fade'
-            });
-        </script>
+        <div class="one-third" id="whoweare">
+
+            <h3>Quieres somos</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus alias magni sapiente expedita
+                veniam
+                quia sequi exercitationem, nostrum quod minima consectetur voluptas quisquam. Distinctio ut impedit
+                inventore reprehenderit vitae sapiente accusamus possimus illum enim voluptatibus iusto delectus,
+                commodi ipsum temporibus!</p>
+        </div>
+        <div class="one-third" id="service">
+
+            <h3>Nuestro servicio</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus alias magni sapiente expedita
+                veniam
+                quia sequi exercitationem, nostrum quod minima consectetur voluptas quisquam. Distinctio ut impedit
+                inventore reprehenderit vitae sapiente accusamus possimus illum enim voluptatibus iusto delectus,
+                commodi ipsum temporibus!</p>
+        </div>
+        <div class="one-third" id="contact">
+
+            <h3>Contacto</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus alias magni sapiente expedita
+                veniam
+                quia sequi exercitationem, nostrum quod minima consectetur voluptas quisquam. Distinctio ut impedit
+                inventore reprehenderit vitae sapiente accusamus possimus illum enim voluptatibus iusto delectus,
+                commodi ipsum temporibus!</p>
+        </div>
+        <footer>
+            <div class="contacto">
+                <ul>
+                    <li>
+                        <a href="instagram.com/lighuenr" target="_blank">Instagram</a>
+
+                    </li>
+                </ul>
+
+                <form id="form">
+                    <label for="email">Ingrese su email y lo contactaremos</label>
+                    <input type="email" id="email" placeholder="Ingrese su email">
+                    <label for="submit">Enviar</label>
+                    <a href="https://www.freecodecamp.com/email-submit)"> <input type="submit" id="submit"></a>
+                </form>
+            </div>
+        </footer>
+
+    </div>
 
 </body>
 
 
-
 </html>
-
-
-
-<!-- 
-
-
-User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.*
-
-
-
-User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).**
-
-User Story #13: The navbar should always be at the top of the viewport.
-
-User Story #14: My product landing page should have at least one media query.
- -->
